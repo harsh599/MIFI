@@ -1,0 +1,317 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" import="javax.servlet.http.HttpSession;"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+ <title>MIFI</title> 
+  <link rel="stylesheet" type="text/css" href="parallax.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <body data-spy="scroll" data-target="my-navbar">
+    <div id="wholepage">
+      <div class="container">
+<nav class="navbar navbar">
+
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+	
+        
+<div class="collapse navbar-collapse" id="bs-nav-demo">
+
+  <div class="nav">
+    <ul>
+        <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+       <li><a href="#about"><i class="fa fa-user"></i>About US</a></li>
+        <li><a href="gymp.jsp"><i class="fa fa-fire"></i>Gymp</a></li>
+        <li><a href="contact_us.html"><i class="fa fa-envelope"></i>Contact Us</a></li>
+      <li><a href="Login.html"><i class="fa fa-user-plus"></i>Sign Up/</a></li>
+      
+     
+		 <%	HttpSession session1 = request.getSession(false);
+      		if(session1 == null)
+      		{
+      	  %>
+      			<li><a href="login.html"><i class="fa fa-sign-in" >Login</i></a></li>
+      	  <% }
+      	  	else
+      		{
+      	   %>
+      	   			<% String n = (String)session1.getAttribute("uName");
+      	   			System.out.println(session1.getId()+"inside else in test.jsp");
+      	   			
+      	   			%>
+      	   		<li><a href="#"><i class="fa fa-sign-in" ><%= n  %></i></a></li>
+      	   <%   
+      	    }
+      	  	%>
+      
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+
+
+  
+
+
+
+<div class="parallaxone">
+  <h1>MYINDIAFITINDIA</h1>
+  <h2>Spreading Fitness across the nation</h2>
+</div>
+</div>
+<div class="parallaxtwo">
+     <h1>Spreading Fitness across the nation</h1>
+  </div>
+</div>
+
+
+
+<div id="about" class="section-padding about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="section_title"><br>
+          <div class="section_subtitle">About Us</div>
+          <h2 class="section-main-title">We are <strong>Creative</strong> </h2>
+        </div>
+     <div class="about-item">
+       <p>Welcome to MyIndiaFitIndia,the #1 social startup in India. Our mission is to provide the ultimate fitness experience. We love to share our passion for fitness and provide a fun, supportive and positive environment for people of all ages and skill levels to get in the best shape of their lives. We want you to have fun, learn, feel challenged, be inspired, feel important, be successful, unleash your passions and simply be happy. 
+       </p>
+       <p>We are dedicated to encourage greatness in our followers and to help inspire and educate them to become healthier and happier in their lives through this Fit India campaign. We aim to have solution for each and every problem existing in the society!
+       </p>
+
+       <div class="hgt-20"></div>
+       <div class="home-button"><br>
+       <a href="" class="btn-color-background">Read More</a>
+     </div>
+  </div>
+</div>
+
+ <div class="col-sm-3 col-sm-offset-2" id="box">
+  <div class="about-box">
+    <div class="box-overlay"></div>
+      <a href="https://www.youtube.com/watch?v=59FWR3Ma12o" class="videopopup">
+        <img src="logo.jpg" alt="">
+        <span class="sonar-wrapper">
+          <span class="sonar-emitter">
+            <i class="fa fa-play"></i>
+              <span class="sonar-wave"></span>
+            </span>
+          </span>
+        </a>
+        </div>
+    </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+
+ 
+<div id="container1">
+<div class="slider">
+  <img src="gym draft.jpg">
+    <img src="WOW draft.jpg">
+ </div>
+</div>
+
+
+
+
+<section class="latest-news-area" id="latest">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section_title">
+          <div class="section_subtitle">Blogs</div>
+          <h2>Recent <strong>Blogs</strong></h2>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="news-active">
+       <div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+              <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+              <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+            </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here
+      </p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="news-active">
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+             <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+              <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+            </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here</p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+ 
+      <div class="news-active">
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+              <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+               <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here</p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="row">
+      <div class="news-active">
+       <div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+              <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+              <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+            </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here
+      </p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+
+      <div class="news-active">
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+             <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+              <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+            </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here</p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+ 
+      <div class="news-active">
+<div class="col-lg-4 col-sm-6">
+    <div class="thumbnail">
+          <div class="latest-news-wrap">
+            <div class="news-img">
+              <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-Wallpapers-HD.jpg" class="img-responsive">
+               <div class="deat">
+                <SPAN>23</SPAN>
+                <span>july</span>
+              </div>
+      </div>
+      <p>our first fitness blog.there is nothing written over here</p><br>
+      <a href="">Read More</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+</section>
+<div class="link">
+  
+  <h2>Follow us On</h2>
+
+  <ul>
+    <li><a href="https://www.google.com/search?ei=8JxVW7ONN821rQGrhZywDA&q=myindiafitindia&oq=myindiafitindia&gs_l=psy-ab.3..0i10k1.4617.10256.0.10594.3.3.0.0.0.0.131.345.1j2.3.0....0...1c.1.64.psy-ab..0.3.344...0i13k1j35i39k1.0.V5mSUfCaX0o" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.facebook.com/myindia.fitindia.7" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.instagram.com/myindiafitindia/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    <li><a href="https://twitter.com/myIndiafitIndia?lang=en-in" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.youtube.com/channel/UCbqsLP8YSZDzDDaU4-Z-EGw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+
+<script >
+// Select all links with hashes
+$('a[href*="#about"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+</div>
+</body>
+</html>
